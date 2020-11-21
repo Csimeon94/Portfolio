@@ -15,22 +15,22 @@ body {
 }
 
 .secondSection{
-  background: rgb(45,100,245);
+  background: white;
   height:auto;
 }
 
 .thirdSection{
-  background: rgb(47,141,255);
+  background: rgb(47,86,233);
   height:auto;
 }
 
 .fourthSection{
-  background: rgb(51,171,249);
+  background: white;
   height:auto;
 }
 
 .fifthSection{
-  background: rgb(52,204,255);
+  background: rgb(47, 86, 233);
   height:auto;
 }
 
@@ -39,9 +39,11 @@ body {
  .firstSection{
   font-size: 15px;
   text-align: center;
+  height: 500px;
   }
   #Title{
-    padding-top: 60px;
+    padding-top: 200px;
+
   }
   .secondSection{
     text-align: center;
@@ -50,24 +52,32 @@ body {
   #content h1{
     margin: 0px;
   }
-  #content img{
-    width: 100px;
-    height: 100px;
-  }
+
 
   #content p{
     margin: 0px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    font-size: 12px;
+    text-align: left;
+
   }
   .thirdSection{
-    height: auto;
+    height: 500px;
     text-align: center;
   }
   #projectContent h1{
     margin: 0px;
   }
 
+  #projectContent img{
+    height: 200px;
+    width: 200px;
+    padding-top: 20px;
+  }
+
   .fourthSection{
-    height: auto;
+    height: 500px;
     text-align: center;
   }
 
@@ -75,8 +85,10 @@ body {
     margin: 0px;
     height: auto;
   }
+
+
   .fifthSection{
-    height: auto;
+    height: 500px;
     text-align: center;
   }
 
