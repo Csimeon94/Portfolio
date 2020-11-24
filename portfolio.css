@@ -1,7 +1,18 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
 body {
 
   margin: 0px;
+}
+
+h1{
+  font-family: 'Rock Salt', cursive;
+}
+
+h2 , p{
+  font-family: 'Darker Grotesque', sans-serif;
 }
 
 .firstSection h1{
@@ -22,6 +33,7 @@ body {
 .thirdSection{
   background: rgb(47,86,233);
   height:auto;
+  color: white;
 }
 
 .fourthSection{
@@ -32,15 +44,35 @@ body {
 .fifthSection{
   background: rgb(47, 86, 233);
   height:auto;
+  color: white;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 10px;
+}
 
-@media(max-width:400px) {
+.grid-item {
+  background-color: white;
+
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/*Phone size*/
+@media(min-width:200px) and (max-width: 1030px) {
  .firstSection{
   font-size: 15px;
   text-align: center;
   height: 500px;
   }
+.firstSection img{
+  width: 50px;
+  height: 50px;
+}
+
   #Title{
     padding-top: 200px;
 
@@ -58,7 +90,7 @@ body {
     margin: 0px;
     padding-bottom: 5px;
     padding-left: 10px;
-    font-size: 12px;
+    font-size: 20px;
     text-align: left;
 
   }
@@ -77,9 +109,14 @@ body {
   }
 
   .fourthSection{
-    height: 500px;
+    height: auto;
     text-align: center;
   }
+
+.grid-item img{
+  width: 150px ;
+  height: 150px;
+}
 
   #skillsContent h1{
     margin: 0px;
@@ -95,4 +132,91 @@ body {
   #contactContent h1{
     margin: 0px;
   }
+
+
+}
+
+/*tablet size */
+@media(max-width:1030px) {
+ .firstSection{
+  font-size: 20px;
+  text-align: center;
+  height: 500px;
+  width: auto;
+  }
+.firstSection img{
+  width: 50px;
+  height: 50px;
+}
+
+  #Title{
+    padding-top: 200px;
+
+  }
+  .secondSection{
+    text-align: center;
+
+  }
+  #content h1{
+    margin: 0px;
+  }
+
+
+  #content p{
+    margin: 0px;
+
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+
+
+  }
+  .thirdSection{
+    height: 500px;
+    text-align: center;
+  }
+  #projectContent h1{
+    margin: 0px;
+  }
+
+  #projectContent img{
+    height: 200px;
+    width: 200px;
+    padding-top: 20px;
+  }
+
+  .fourthSection{
+    height: auto;
+    text-align: center;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    padding: 10px;
+  }
+
+.grid-item img{
+  width: 150px ;
+  height: 150px;
+  border-radius: 10%;
+}
+
+  #skillsContent h1{
+    margin: 0px;
+    height: auto;
+  }
+
+
+  .fifthSection{
+    height: 500px;
+    text-align: center;
+  }
+
+  #contactContent h1{
+    margin: 0px;
+  }
+
+
 }
