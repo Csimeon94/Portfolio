@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="portfolio.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title></title>
   </head>
   <body>
-
+    <button id="btnScrollToTop">
+            <i class="material-icons">arrow_upward</i>
+          </button>
     <div class="firstSection">
     <div id="Title">
 <h1>Clifford Simeon</h1>
@@ -72,5 +77,19 @@
 
 
 </div>
+
+
+<script>
+  const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+  btnScrollToTop.addEventListener("click", function(){
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    })
+  });
+
+</script>
   </body>
 </html>
